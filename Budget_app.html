@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Budget_app.css">
+    <title>Budget_app</title>
+</head>
+<body>
+    <div id="image">
+        <div id="budget">
+            <p>Available budget in (month) (year)</p>
+            <h1>Amount</h1>
+            <div id="total-income">
+                <p id="income-text">Income</p>
+                <div id="income-amount">Amount</div>
+            </div>
+
+            <div id="total-expense">
+                <p id="expense-text">Expense</p>
+                <div id="expense-amount">Amount</div>
+                <div id="expense-percentage">96%</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="data">
+        <select id="sign" class="sign">
+            <option value="inc">+</option>
+            <option value="exp">-</option>
+        </select>
+
+        <input type="text" id="description" class="description" placeholder="Add description">
+        <input type="number" id="value" class="value" placeholder="Value">
+        <button id="tick" class="tick"><i class="ion-ios-checkmark-outline"></i></button>
+    </div>
+
+    <div id="income-title">Income</div>
+    <div id="expense-title">Expense</div>
+
+    <div class="income-list">
+        <!-- <div class="income-item" id="income-1">
+            <div class="income-description">Description</div>
+            <div class="income-value">Value</div>
+            <button class="income-delete"><i class="ion-ios-close-outline"></i></button>
+        </div> -->
+    </div>
+
+
+    <div class="expense-list">
+        <!-- <div class="expense-item" id="expense-1">
+            <div class="expense-description">Description</div>
+            <div class="expense-value">Value</div>
+            <button class="expense-delete"><i class="ion-ios-close-outline"></i></button>
+            <div class="expense-percentage">23%</div>
+        </div> -->
+    </div>
+</body>
+    <script src="Budget_app.js"></script>
+</html>

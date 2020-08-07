@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#image{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .1)),url(Budget_app_images/Background.png);
+    background-position: center;
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    height: 372px;
+}
+
+#budget{
+    text-align: center;
+    position: absolute;
+    top: 80px;
+    left: 550px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+p{
+    font-size: 26px;
+    padding: 5px;
+    margin: 5px;
+}
+
+h1{
+    font-size: 45px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#total-income, #total-expense{
+    width: 320px;
+    height: 43px;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    left: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#total-income{
+    background-color: rgb(69, 245, 69);
+}
+
+#total-expense{
+    background-color: rgb(247, 63, 63);
+} 
+
+#income-text,#expense-text{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: -2px;
+}
+
+#income-amount,#expense-amount{
+    font-size: 24px;
+    position: absolute;
+    top: 10px;
+    left: 183px;
+}
+
+#expense-percentage{
+    font-size: 16px;
+    position: absolute;
+    top: 8px;
+    left: 275px;
+    padding: 4px;
+    border-radius: 3px;
+    background-color: rgb(248, 115, 115);
+}
+
+#data{
+    background-color: rgb(236, 235, 235);
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 70px;
+}
+
+#sign{
+    font-size: 20px;
+    color: rgb(87, 87, 87);
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 500px;
+    width: 50px;
+    height: 40px;
+}
+
+#description{
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 575px;
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+#value{
+    border: 1px solid rgb(87, 87, 87);
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    left: 850px;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#tick{
+    position: absolute;
+    top: 14px;
+    left: 973px;
+    font-size: 40px;
+    color: black;
+}
+
+.inc-border{
+    border: 1px solid rgb(69, 245, 69);
+}
+
+.exp-border{
+    border: 1px solid rgb(247, 63, 63)
+}
+
+#income-title{
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    font-size: 28px;
+    color: rgb(69, 245, 69);
+}
+
+#expense-title{
+    position: absolute;
+    top: 400px;
+    left: 850px;
+    font-size: 28px;
+    color: rgb(247, 63, 63);
+}
+
+.income-list{
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 450px;
+    left: 350px;
+}
+
+.income-item,.expense-item{
+    border-top: 1px solid rgb(165, 163, 163);
+    border-bottom: 1px solid rgb(165, 163, 163);
+    width: 350px;
+    height: 40px;
+    position: relative;
+}
+
+.income-description,.expense-description{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 20px;
+    color: rgb(87, 85, 85);
+}
+
+.income-value{
+    position: absolute;
+    top: 10px;
+    left: 290px;
+    font-size: 20px;
+}
+
+.income-delete,.expense-delete{
+    position: absolute;
+    top: 5px;
+    left: 315px;
+    font-size: 22px;
+    font-weight: 900;
+    display: none;
+}
+
+.income-value,.income-delete{
+    color:rgb(69, 245, 69) ;
+}
+
+.expense-list{
+    width: 350px;
+    height: 500px;
+    position: absolute;
+    top: 450px;
+    left: 850px;
+}
+
+.expense-value{
+    position: absolute;
+    top: 10px;
+    left: 240px;
+    font-size: 20px;
+}
+
+.expense-percentage{
+    padding: 4px;
+    border-radius: 3px;
+    background-color: rgb(248, 115, 115);
+    color: white;
+    width:35px ;
+    position: absolute;
+    top: 6px;
+    left: 300px;
+
+}
+
+.expense-value,.expense-delete{
+    color: rgb(247, 63, 63);
+}
+
+.income-item:hover .income-delete{
+    display: block;
+}
+
+.income-item:hover .income-value{
+    transform: translateX(-30px);
+}
+
+.expense-item:hover .expense-delete{
+    display: block;
+}
+
+.expense-item:hover .expense-value{
+    transform: translateX(-30px);
+}
+
+.expense-item:hover .expense-percentage{
+    transform: translateX(-30px);
+}
